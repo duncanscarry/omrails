@@ -3,6 +3,9 @@
 class DeviseCreateUsers < ActiveRecord::Migration[5.2]
   def change
     create_table :users do |t|
+
+config.secret_key = '036e8d3134dcf2695bc624d266068070adab318ead598e3083b9f06c40c235ac21aa882d09a755b0c866d7fcb22e118808eca2ed226305f522bb369587929f42'
+      
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
